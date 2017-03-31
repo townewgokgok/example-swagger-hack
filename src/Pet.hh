@@ -10,18 +10,18 @@ require_once __DIR__ . "/../vendor/autoload.php";
 class Pet {
 
 	/**
-	 * @SWG\Property(type="integer", format="int64")
+	 * @SWG\Property(property="id", type="integer", format="int64")
 	 */
 	public int $id;
 
 	/**
-	 * @SWG\Property()
+	 * @SWG\Property(property="name")
 	 * @var string
 	 */
 	public string $name;
 
 	/**
-	 * @SWG\Property()
+	 * @SWG\Property(property="tag")
 	 * @var string
 	 */
 	public string $tag;

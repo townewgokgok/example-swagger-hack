@@ -2,12 +2,6 @@ swagger-php で Hack のコードをスキャンできるか実験
 
 ```
 $ hhvm generate.hh
-
-Notice: @SWG\Property() is missing key-field: "property" in /Users/k-furukawa/Documents/workspace/test/example-swagger-hack/src/Pet.hh on line 12 in /Users/k-furukawa/Documents/workspace/test/example-swagger-hack/vendor/zircote/swagger-php/src/Logger.php on line 38
-
-Notice: @SWG\Property() is missing key-field: "property" in /Users/k-furukawa/Documents/workspace/test/example-swagger-hack/src/Pet.hh on line 17 in /Users/k-furukawa/Documents/workspace/test/example-swagger-hack/vendor/zircote/swagger-php/src/Logger.php on line 38
-
-Notice: @SWG\Property() is missing key-field: "property" in /Users/k-furukawa/Documents/workspace/test/example-swagger-hack/src/Pet.hh on line 23 in /Users/k-furukawa/Documents/workspace/test/example-swagger-hack/vendor/zircote/swagger-php/src/Logger.php on line 38
 ```
 
 ```yaml
@@ -106,5 +100,12 @@ definitions:
         required:
             - id
             - name
-        properties: {  }
+        properties:
+            id:
+                type: integer
+                format: int64
+            name:
+                type: string
+            tag:
+                type: string
 ```
