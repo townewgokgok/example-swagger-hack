@@ -110,8 +110,7 @@ definitions:
                 type: string
 ```
 
-property や type はコードから自明なので、ちょっと冗長
-さすがにここは改造が要る
+`property` や `type` はコードから自明なので、ちょっと冗長。さすがにここを自動でやるには改造が要る
 
 ```hack
 /**

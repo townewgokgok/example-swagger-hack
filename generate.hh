@@ -4,8 +4,9 @@ ini_set("display_errors", "stderr");
 require_once "vendor/autoload.php";
 
 use Symfony\Component\Yaml\Yaml;
+use Symfony\Component\Finder\Finder;
 
-$finder = (new Symfony\Component\Finder\Finder())
+$finder = (new Finder())
 	->sortByName()
 	->in(__DIR__ . "/src")
 	->name("*.hh");
