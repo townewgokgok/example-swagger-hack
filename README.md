@@ -109,3 +109,13 @@ definitions:
             tag:
                 type: string
 ```
+
+property や type はコードから自明なので、ちょっと冗長
+さすがにここは改造が要る
+
+```hack
+/**
+ * @SWG\Property(property="id", type="integer", format="int64")
+ */
+public int $id;
+```
